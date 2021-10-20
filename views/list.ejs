@@ -6,7 +6,17 @@
     <title>Schedule-Manager</title>
 </head>
 <body>
-    <h1>today  <%= kindOfDay %> !!</h1>
+   <% if(kindOfDay === "Sunday" || kindOfDay === "Saturday") { %>
+
+         <h1 style = "color: red;"> <%= kindOfDay %> !! that means Weekend. Yeppie</h1>
+
+    
+    <%  } else { %>
+
+        <h1 style="color: purple;"> <%= kindOfDay %> it's a weekDay. Go work </h1>
+   
+        <% } %>
+
 
 </body>
 </html>
